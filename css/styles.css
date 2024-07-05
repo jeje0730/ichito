@@ -7,25 +7,77 @@
     background-color: #f4f4f4;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+section {
+    min-width: 800px;
+    margin: auto;
+}
+
+.logo{
+    width: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: top; /* 縦方向の中央揃え */
+}
+.ramen {
+    width: 500px; /* 画像の幅 */
+    height: auto; /* 高さは自動調整 */
+    margin-left: 30px; /* 画像とテキストの間隔 */
+}
+
+.text {
+    font-family: HG行書体; /* ブラウザのデフォルトの筆記体フォントを使用 */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
+    transform: rotate(-8deg); /* テキストを回転させる */
+    font-size: 40px; /* テキストのフォントサイズ */
+    margin-top: 50px;
+}
+
+.text1 {
+    font-family: HG行書体; /* ブラウザのデフォルトの筆記体フォントを使用 */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
+    transform: rotate(-8deg); /* テキストを回転させる */
+    font-size: 25px; /* テキストのフォントサイズ */
+    margin-top: 30px;
+}
+
 .header {
-    background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .nav ul {
+    font-family: HGS教科書体;
+    font: bold 200px;
     list-style-type: none;
     padding: 0;
+    display: flex;
 }
 
 .nav ul li {
     display: inline;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 .nav ul li a {
-    color: #fff;
+    color: #161616;
     text-decoration: none;
 }
 
