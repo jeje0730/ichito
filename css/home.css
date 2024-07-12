@@ -4,7 +4,7 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffdead;
 }
 
 main {
@@ -21,7 +21,7 @@ section {
 }
 
 .logo{
-    width: 100px;
+    width: 240px;
     float: left;
     margin-top: 10px;
     margin-left: 10px;
@@ -38,7 +38,10 @@ section {
 }
 
 .text {
-    font-family: HG行書体; /* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
     transform: rotate(-8deg); /* テキストを回転させる */
     font-size: 40px; /* テキストのフォントサイズ */
@@ -46,7 +49,10 @@ section {
 }
 
 .text1 {
-    font-family: HG行書体; /* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000; /* ブラウザのデフォルトの筆記体フォントを使用 */
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
     transform: rotate(-8deg); /* テキストを回転させる */
     font-size: 25px; /* テキストのフォントサイズ */
@@ -64,11 +70,10 @@ section {
 }
 
 .nav ul {
-    font-family: HGS教科書体;
-    font: bold 200px;
-    list-style-type: none;
-    padding: 0;
-    display: flex;
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
 }
 
 .nav ul li {
@@ -81,11 +86,35 @@ section {
     text-decoration: none;
 }
 
+.banner {
+    display: flex; 
+    justify-content: center; /* 中央寄せ */
+    align-items: center; /* 縦方向にも中央寄せ */
+    margin-top:100px;
+    margin-bottom: 50px;
+}
+
+.open {
+    font-size:60px;
+    text-align: center;
+    font-family: "Hina Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.itito {
+    font-family: "Shippori Mincho B1", serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 1000;
+    color: #161616;
+}
+
 .footer {
     text-align: center;
-    padding: 3rem;
-    background: #333;
-    color: #fff;
+    padding: 2rem;
+    background: #121212;
+    color: whitesmoke;
     position: fixed;
     width: 100%;
     bottom: 0;
