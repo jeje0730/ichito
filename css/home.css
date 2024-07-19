@@ -73,7 +73,7 @@ section {
     font-family: "Shippori Mincho B1", serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .nav ul li {
@@ -91,7 +91,8 @@ section {
     justify-content: center; /* 中央寄せ */
     align-items: center; /* 縦方向にも中央寄せ */
     margin-top:100px;
-    margin-bottom: 50px;
+    width: fit-content;
+    margin: 0 auto 50px;
 }
 
 .open {
@@ -115,7 +116,6 @@ section {
     padding: 2rem;
     background: #121212;
     color: whitesmoke;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
