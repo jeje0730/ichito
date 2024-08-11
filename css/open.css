@@ -40,9 +40,85 @@
     text-decoration: none;
 }
 
+.open {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-size: 60px; /* テキストのフォントサイズ */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.day {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-size: 30px; /* テキストのフォントサイズ */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.map {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-size: 30px; /* テキストのフォントサイズ */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.phone {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-size: 30px; /* テキストのフォントサイズ */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.time {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-size: 30px; /* テキストのフォントサイズ */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.text2 {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
+    font-size: 30px; /* テキストのフォントサイズ */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.official {
+    font-size: 25px;
+    margin-bottom: 15px;
+    
+}
+
+.insta {
+    display: flex; 
+    justify-content: center; /* 中央寄せ */
+    align-items: center; /* 縦方向にも中央寄せ */
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 60px;
+    margin: 0 auto 50px;
+}
+
 .footer {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background: #121212;
     color: whitesmoke;
     width: 100%;
