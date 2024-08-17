@@ -32,7 +32,7 @@ section {
     align-items: top; /* 縦方向の中央揃え */
 }
 .ramen {
-    width: 500px; /* 画像の幅 */
+    width: 550px; /* 画像の幅 */
     height: auto; /* 高さは自動調整 */
     margin-left: 30px; /* 画像とテキストの間隔 */
     margin-bottom: 100px;
@@ -110,6 +110,16 @@ section {
     font-style: normal;
     font-weight: 1000;
     color: #161616;
+}
+
+.insta {
+    display: flex; 
+    justify-content: center; /* 中央寄せ */
+    align-items: center; /* 縦方向にも中央寄せ */
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 60px;
+    margin: 0 auto 50px;
 }
 
 .footer {
