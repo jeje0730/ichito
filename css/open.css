@@ -3,7 +3,7 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffdead;
+    background-color: #faf0e6;
 }
 
 .logo{
@@ -60,7 +60,7 @@
     text-align: center;
 }
 
-.map {
+.jusyo {
     font-family: "Shippori Mincho B1", serif;
     font-weight: 800;
     font-style: normal;
@@ -112,15 +112,15 @@
     align-items: center; /* 縦方向にも中央寄せ */
     margin-top:10px;
     margin-bottom: 10px;
-    width: 60px;
+    width: 80px;
     margin: 0 auto 50px;
 }
 
 .footer {
     text-align: center;
     padding: 1rem;
-    background: #121212;
-    color: whitesmoke;
+    background: #ffdab9;
+    color: #696969;
     width: 100%;
     bottom: 0;
 }

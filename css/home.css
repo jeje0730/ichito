@@ -4,7 +4,7 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffdead;
+    background-color: #faf0e6;
 }
 
 main {
@@ -92,8 +92,11 @@ section {
     justify-content: center; /* 中央寄せ */
     align-items: center; /* 縦方向にも中央寄せ */
     margin-top:100px;
-    width: fit-content;
     margin: 0 auto 50px;
+}
+
+.banner img {
+    width: 700px;
 }
 
 .open {
@@ -113,22 +116,21 @@ section {
 }
 
 .insta {
-    display: flex; 
-    justify-content: center; /* 中央寄せ */
-    align-items: center; /* 縦方向にも中央寄せ */
-    margin-top:10px;
-    margin-bottom: 10px;
-    width: 60px;
-    margin: 0 auto 50px;
+    width: 80px;
+    margin: 0;
 }
 
 .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 2rem;
-    background: #121212;
-    color: whitesmoke;
+    background: #ffdab9;
+    color: #696969;
     width: 100%;
     bottom: 0;
+    font-weight: bold;
 }
 
 @media (max-width: 600px) {

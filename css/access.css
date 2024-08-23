@@ -40,49 +40,29 @@
     text-decoration: none;
 }
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 50px;
 }
 
-/* 入力フィールドとテキストエリアの共通スタイル */
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* 内側のパディングと境界線を含める */
-    font-size: 14px;
+.official {
+    font-size: 25px;
+    margin-bottom: 15px;
+    
 }
 
-/* 送信ボタンのスタイル */
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-/* 送信ボタンをホバーした時のスタイル */
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* プレースホルダーの色を設定 */
-::placeholder {
-    color: #ccc;
+.insta {
+    width: 80px;
+    margin: 0;
 }
 
 .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 2rem;
     background: #ffdab9;
     color: #696969;
