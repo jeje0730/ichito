@@ -40,7 +40,6 @@ section {
 
 .text {
     font-family: "Shippori Mincho B1", serif;
-    font-weight: 800;
     font-style: normal;
     font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
@@ -51,7 +50,6 @@ section {
 
 .text1 {
     font-family: "Shippori Mincho B1", serif;
-    font-weight: 800;
     font-style: normal;
     font-weight: 1000; /* ブラウザのデフォルトの筆記体フォントを使用 */
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
@@ -133,6 +131,106 @@ section {
     font-weight: bold;
 }
 
+@media (max-width: 800px) {
+    .header, .footer {
+        padding: 1rem;
+    }
+
+    .nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .text {
+        font-size: 30px;
+        width: 70%;
+    }
+
+    .text1 {
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .ramen {
+        width: 70%;
+    }
+
+    .banner {
+        margin-top: 100px;
+    }
+
+    .banner img {
+        width: 500px;
+    }
+
+    .open {
+        font-size: 40px;
+    }
+
+    .itito {
+        font-size: 45px;
+    }
+
+    .insta {
+        width: 50px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .header, .footer {
+        padding: 1rem;
+    }
+
+    .nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .text {
+        font-size: 25px;
+        width: 60%;
+    }
+
+    .text1 {
+        font-size: 15px;
+        width: 60%;
+    }
+
+    .ramen {
+        width: 60%;
+    }
+
+    .banner {
+        margin-top: 50px;
+    }
+
+    .banner img {
+        width: 400px;
+    }
+
+    .open {
+        font-size: 35px;
+    }
+
+    .itito {
+        font-size: 40px;
+    }
+
+    .insta {
+        width: 40px;
+    }
+
+}
+
 @media (max-width: 600px) {
     .header, .footer {
         padding: 1rem;
@@ -142,4 +240,145 @@ section {
         display: block;
         margin: 0.5rem 0;
     }
+
+    .container{
+        display: block;
+    }
+
+    .text {
+        font-size: 25px;
+        width: 53%;
+    }
+
+    .text1 {
+        font-size: 15px;
+        width: 53%;
+    }
+
+    .ramen {
+        width: 53%;
+    }
+
+    .banner {
+        margin-top: 40px;
+    }
+
+    .banner img {
+        width: 400px;
+    }
+
+    .open {
+        font-size: 35px;
+    }
+
+    .itito {
+        font-size: 40px;
+    }
+
+    .insta {
+        width: 40px;
+    }
+
 }
+
+@media (max-width: 500px) {
+    .header, .footer {
+        padding: 1rem;
+    }
+
+    .nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .text {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .text1 {
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .ramen {
+        width: 50%;
+    }
+
+    .banner {
+        margin-top: 30px;
+    }
+
+    .banner img {
+        width: 300px;
+    }
+
+    .open {
+        font-size: 30px;
+    }
+
+    .itito {
+        font-size: 35px;
+    }
+
+    .insta {
+        width: 50px;}
+}
+
+@media (max-width: 400px) {
+    .header, .footer {
+        padding: 1rem;
+    }
+
+    .nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .text {
+        font-size: 15px;
+        width: 30%;
+    }
+
+    .text1 {
+        font-size: 10px;
+        width: 30%;
+    }
+
+    .ramen {
+        width: 30%;
+    }
+
+    .banner {
+        margin-top: 20px;
+    }
+
+    .banner img {
+        width: 100px;
+    }
+
+    .open {
+        font-size: 20px;
+    }
+
+    .itito {
+        font-size: 25px;
+    }
+
+    .insta {
+        width: 30px;
+    }
+
+}
+
+
+
+
