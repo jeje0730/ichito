@@ -23,6 +23,13 @@
     padding: 0 1rem;
 }
 
+.basyo {
+    font-family: "Yuji Boku", serif;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
 .nav ul {
     font-family: "Shippori Mincho B1", serif;
     font-weight: 800;
