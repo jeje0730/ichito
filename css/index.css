@@ -1,5 +1,4 @@
-
-.body {
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -16,11 +15,10 @@ main {
 }
 
 section {
-    /* min-width: 800px; */
     margin: auto;
 }
 
-.logo{
+.logo {
     width: 240px;
     float: left;
     margin-top: 10px;
@@ -29,32 +27,32 @@ section {
 
 .container {
     display: flex;
-    align-items: top; /* 縦方向の中央揃え */
+    align-items: top;
 }
+
 .ramen {
-    width: 550px; /* 画像の幅 */
-    height: auto; /* 高さは自動調整 */
-    margin-left: 30px; /* 画像とテキストの間隔 */
+    width: 550px;
+    height: auto;
     margin-bottom: 100px;
 }
 
 .text {
     font-family: "Yuji Syuku", serif;
     font-style: normal;
-    font-weight: 1000;/* ブラウザのデフォルトの筆記体フォントを使用 */
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
-    transform: rotate(-8deg); /* テキストを回転させる */
-    font-size: 40px; /* テキストのフォントサイズ */
+    font-weight: 1000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transform: rotate(-8deg);
+    font-size: 40px;
     margin-top: 50px;
 }
 
 .text1 {
     font-family: "Yuji Boku", serif;
     font-style: normal;
-    font-weight: 1000; /* ブラウザのデフォルトの筆記体フォントを使用 */
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* テキストに影をつける */
-    transform: rotate(-8deg); /* テキストを回転させる */
-    font-size: 25px; /* テキストのフォントサイズ */
+    font-weight: 1000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transform: rotate(-8deg);
+    font-size: 25px;
     margin-top: 30px;
 }
 
@@ -86,26 +84,24 @@ section {
 }
 
 .banner {
-    display: flex; 
-    justify-content: center; /* 中央寄せ */
-    align-items: center; /* 縦方向にも中央寄せ */
-    margin-top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
     margin: 0 auto 50px;
 }
-
-
 
 .banner img {
     width: 700px;
 }
 
 .open {
-    font-size:60px;
+    font-size: 60px;
     text-align: center;
     font-family: "Yuji Syuku", serif;
     font-weight: 400;
     font-style: normal;
-    }
+}
 
 .itito {
     font-family: "Shippori Mincho B1", serif;
@@ -133,9 +129,63 @@ section {
     font-weight: bold;
 }
 
-@media (max-width: 800px) {
+/* ハンバーガーメニュー用のスタイル */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 999;
+}
+
+.menu.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
     .header, .footer {
         padding: 1rem;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+
+    .nav {
+        display: none;
     }
 
     .nav ul li {
@@ -143,22 +193,22 @@ section {
         margin: 0.5rem 0;
     }
 
-    .container{
+    .container {
         display: block;
     }
 
     .text {
         font-size: 30px;
-        width: 70%;
+        width: 100%;
     }
 
     .text1 {
         font-size: 20px;
-        width: 70%;
+        width: 100%;
     }
 
     .ramen {
-        width: 70%;
+        width: 100%;
     }
 
     .banner {
@@ -180,35 +230,32 @@ section {
     .insta {
         width: 50px;
     }
-
 }
 
 @media (max-width: 700px) {
-    .header, .footer {
-        padding: 1rem;
-    }
 
-    .nav ul li {
-        display: block;
-        margin: 0.5rem 0;
+    .pc-menu {
+        display: none;
     }
-
-    .container{
-        display: block;
+    
+    .mobile-menu{
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
-
     .text {
         font-size: 25px;
-        width: 60%;
+        width: 100%;
     }
 
     .text1 {
         font-size: 15px;
-        width: 60%;
+        width: 100%;
     }
 
     .ramen {
-        width: 60%;
+        width: 100%;
     }
 
     .banner {
@@ -230,36 +277,32 @@ section {
     .insta {
         width: 40px;
     }
-
 }
 
 @media (max-width: 600px) {
-    .header, .footer {
-        padding: 1rem;
+    .pc-menu {
+        display: none;
+    }
+
+    .mobile-menu{
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
-    }
-
-    .nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    .container{
-        display: block;
     }
 
     .text {
         font-size: 25px;
-        width: 70%;
+        width: 100%;
     }
 
     .text1 {
         font-size: 15px;
-        width: 53%;
+        width: 100%;
     }
 
     .ramen {
-        width: 53%;
+        width: 100%;
     }
 
     .banner {
@@ -277,39 +320,33 @@ section {
     .itito {
         font-size: 40px;
     }
-
-    .insta {
-        width: 40px;
-    }
-
 }
 
+/* ここを使う */
 @media (max-width: 500px) {
-    .header, .footer {
-        padding: 1rem;
+    .pc-menu {
+        display: none;
     }
 
-    .nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    .container{
-        display: block;
+    .mobile-menu{
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .text {
-        font-size: 30px;
-        width: 50%;
+        font-size: 20px;
+        width: 100%;
     }
 
     .text1 {
-        font-size: 25px;
-        width: 50%;
+        font-size: 15px;
+        width: 100%;
     }
 
     .ramen {
-        width: 50%;
+        width: 100%;
     }
 
     .banner {
@@ -329,35 +366,24 @@ section {
     }
 
     .insta {
-        width: 50px;}
+        width: 50px;
+    }
 }
 
 @media (max-width: 400px) {
-    .header, .footer {
-        padding: 1rem;
-    }
-
-    .nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    .container{
-        display: block;
-    }
-
     .text {
-        font-size: 15px;
-        width: 30%;
+        font-size: 200px;
+        width: 100%;
+        
     }
 
     .text1 {
-        font-size: 10px;
-        width: 30%;
+        font-size: 15px;
+        width: 100%;
     }
 
     .ramen {
-        width: 30%;
+        width: 100%;
     }
 
     .banner {
@@ -379,9 +405,4 @@ section {
     .insta {
         width: 30px;
     }
-
 }
-
-
-
-

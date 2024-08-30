@@ -6,7 +6,7 @@
     <title>らーめんいちと</title>
 	<!-- reset.css ress -->
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Hina+Mincho&display=swap" rel="stylesheet">
@@ -21,15 +21,31 @@
 <body class="body">
     <header class="header">
         <img src="img/logo1.png" alt="ロゴ" class="logo">
-        <nav class="nav">
+        <nav class="nav pc-menu">
             <ul>
-                <li><a href="home.html">ホーム</a></li>
+                <li><a href="index.html">ホーム</a></li>
                 <li><a href="menu.html">メニュー</a></li>
                 <li><a href="access.html">アクセス</a></li>
                 <li><a href="charm.html">店のいいところ</a></li>
                 <li><a href="contact.html">おといあわせ</a></li>
             </ul>
         </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <div class="menu">
+            <nav class="nav mobile-menu">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="menu.html">メニュー</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="charm.html">店のいいところ</a></li>
+                    <li><a href="contact.html">おといあわせ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="profile">
@@ -43,7 +59,7 @@
 
 
         </section>
-        <section id="hobbies">
+        <section class="section-banner">
             <a href="open.html" class="banner"><img src="img/openbanner.png" alt="open"></a>
             <p class="open">らーめん<span class="itito">いちと</span>オープン！！！！</p>
         </section>
