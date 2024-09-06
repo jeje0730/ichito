@@ -389,14 +389,14 @@ section {
 
 @media (max-width: 400px) {
     .text {
-        font-size: 200px;
-        width: 40%;
+        font-size: 20px;
+        width: 100%;
         
     }
 
     .text1 {
         font-size: 15px;
-        width: 40%;
+        width: 100%;
     }
 
     .ramen {
