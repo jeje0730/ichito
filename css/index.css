@@ -388,6 +388,17 @@ section {
 }
 
 @media (max-width: 400px) {
+    .pc-menu {
+        display: none;
+    }
+
+    .mobile-menu{
+        margin: 2rem auto 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .text {
         font-size: 20px;
         width: 50%;
