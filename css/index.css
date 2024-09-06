@@ -116,6 +116,11 @@ section {
     margin: 0;
 }
 
+.tell {
+    width: 80px;
+    margin: 0;
+}
+
 .footer {
     display: flex;
     justify-content: center;
