@@ -390,17 +390,17 @@ section {
 @media (max-width: 400px) {
     .text {
         font-size: 20px;
-        width: 100%;
+        width: 50%;
         
     }
 
     .text1 {
         font-size: 15px;
-        width: 100%;
+        width: 50%;
     }
 
     .ramen {
-        width: 40%;
+        width: 50%;
     }
 
     .banner {
