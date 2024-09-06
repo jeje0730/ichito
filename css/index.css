@@ -235,6 +235,10 @@ section {
     .insta {
         width: 50px;
     }
+
+    .tell {
+        width: 50px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -280,7 +284,11 @@ section {
     }
 
     .insta {
-        width: 40px;
+        width: 60px;
+    }
+
+    .tell {
+        width: 60px;
     }
 }
 
@@ -373,6 +381,10 @@ section {
     .insta {
         width: 50px;
     }
+
+    .tell {
+        width: 50px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -408,6 +420,10 @@ section {
     }
 
     .insta {
-        width: 30px;
+        width: 40px;
+    }
+
+    .tell {
+        width: 40px;
     }
 }
