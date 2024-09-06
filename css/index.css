@@ -293,16 +293,16 @@ section {
 
     .text {
         font-size: 25px;
-        width: 100%;
+        width: 60%;
     }
 
     .text1 {
         font-size: 15px;
-        width: 100%;
+        width: 60%;
     }
 
     .ramen {
-        width: 100%;
+        width: 60%;
     }
 
     .banner {
@@ -337,16 +337,16 @@ section {
 
     .text {
         font-size: 20px;
-        width: 100%;
+        width: 50%;
     }
 
     .text1 {
         font-size: 15px;
-        width: 100%;
+        width: 50%;
     }
 
     .ramen {
-        width: 100%;
+        width: 50%;
     }
 
     .banner {
@@ -373,17 +373,17 @@ section {
 @media (max-width: 400px) {
     .text {
         font-size: 200px;
-        width: 100%;
+        width: 40%;
         
     }
 
     .text1 {
         font-size: 15px;
-        width: 100%;
+        width: 40%;
     }
 
     .ramen {
-        width: 100%;
+        width: 40%;
     }
 
     .banner {
