@@ -31,7 +31,7 @@ type="image/png"
 <script src="js/main.js" defer></script>
 </head>
 
-<body>
+<body class="menu-page">
 
 <!-- ヘッダー -->
 <header class="header">
@@ -81,7 +81,7 @@ type="image/png"
     <section class="page-header menu-header">
     <div class="page-header-content">
 
-        <p class="page-header-en">OUR MENU</p>
+        <p class="page-header-en">RAMEN ICHITO — GOKASHO</p>
 
         <h1>お品書き</h1>
 
@@ -109,9 +109,9 @@ type="image/png"
         class="category-navigation"
         aria-label="お品書きカテゴリー"
         >
-        <a href="#ramen">らぁ麺</a>
-        <a href="#set-meal">定食</a>
-        <a href="#side-menu">単品</a>
+        <a href="#ramen"><span>01</span>らぁ麺<span aria-hidden="true">↓</span></a>
+        <a href="#set-meal"><span>02</span>定食<span aria-hidden="true">↓</span></a>
+        <a href="#side-menu"><span>03</span>単品<span aria-hidden="true">↓</span></a>
         </nav>
 
     </div>
@@ -125,7 +125,7 @@ type="image/png"
     <div class="inner">
 
         <div class="section-title">
-        <p class="section-title-en">RAMEN</p>
+        <p class="section-title-en">01 / RAMEN</p>
         <h2>らぁ麺</h2>
         </div>
 
@@ -147,8 +147,9 @@ type="image/png"
 
         <div class="menu-category-image">
             <img
-            src="images/ramen-hero.png"
-            alt="いちとのらぁ麺"
+            src="images/shoyu-ramen-burgundy.jpg"
+            alt="澄んだ醤油スープとちゃーしゅーが楽しめる醤油らぁ麺"
+            width="1536" height="1024" loading="lazy" decoding="async"
             >
         </div>
 
@@ -214,7 +215,7 @@ type="image/png"
     <div class="inner">
 
         <div class="section-title">
-        <p class="section-title-en">SET MENU</p>
+        <p class="section-title-en">02 / SET MENU</p>
         <h2>定食</h2>
         </div>
 
@@ -225,43 +226,55 @@ type="image/png"
 
         <div class="menu-list-grid">
 
-        <article class="menu-item">
+        <article class="menu-item set-meal-card">
+            <img class="set-meal-photo" src="images/karaage-set-burgundy.jpg"
+            alt="ラーメン、唐揚げ3個、ライスを組み合わせた唐揚げ定食"
+            width="1536" height="1024" loading="lazy" decoding="async">
             <div class="menu-item-heading">
             <h3>唐揚げ定食</h3>
             <p class="menu-price">1400円</p>
             </div>
 
             <p>
-            らぁ麺と一緒に楽しめる定食をご用意しています。
+            ラーメン ＋ 唐揚げ3個 ＋ ライス
             </p>
+            <p>香ばしい唐揚げ3個に、ライスを添えた定食。ラーメンと一緒にしっかり楽しめます。</p>
         </article>
 
-        <article class="menu-item">
+        <article class="menu-item set-meal-card">
+            <img class="set-meal-photo" src="images/chashu-don-set-burgundy.jpg"
+            alt="ラーメンとちゃーしゅー丼を組み合わせたちゃーしゅー丼定食"
+            width="1536" height="1024" loading="lazy" decoding="async">
             <div class="menu-item-heading">
             <h3>ちゃーしゅー丼定食</h3>
             <p class="menu-price">1350円</p>
             </div>
 
             <p>
-            ご飯とおかずをしっかり味わいたい方に。
+            ラーメン ＋ ちゃーしゅー丼
             </p>
+            <p>ラーメンに、ちゃーしゅーを盛り付けた丼を合わせた定食。麺もご飯も味わいたい方に。</p>
         </article>
 
-        <article class="menu-item">
+        <article class="menu-item set-meal-card">
+            <img class="set-meal-photo" src="images/ichito-set-burgundy.jpg"
+            alt="ラーメン、唐揚げ2個、ちゃーしゅー丼を組み合わせたいちと定食"
+            width="1536" height="1024" loading="lazy" decoding="async">
             <div class="menu-item-heading">
             <h3>いちと定食</h3>
             <p class="menu-price">1500円</p>
             </div>
 
             <p>
-            内容については、店内のお品書きをご確認ください。
+            ラーメン ＋ 唐揚げ2個 ＋ ちゃーしゅー丼
             </p>
+            <p>ラーメンとちゃーしゅー丼に、唐揚げ2個をプラス。いちとの味を一度に楽しめる定食です。</p>
         </article>
 
         </div>
 
         <p class="menu-note">
-        ※定食の内容は、実際のお品書きに合わせて変更してください。
+        ※写真は提供写真をもとに作成した組み合わせイメージです。
         </p>
 
     </div>
@@ -275,7 +288,7 @@ id="side-menu"
 <div class="inner">
 
     <div class="section-title">
-    <p class="section-title-en">SIDE DISH</p>
+        <p class="section-title-en">03 / SIDE DISH</p>
     <h2>単品</h2>
     </div>
 
