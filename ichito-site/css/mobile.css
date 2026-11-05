@@ -28,8 +28,9 @@
 
   /* 写真の下に店名を置き、文字と料理を重ねすぎない */
   .hero { display: block; min-height: 0; padding-top: clamp(220px, 67vw, 340px); background: var(--black); }
-  .hero-slides { bottom: auto; height: clamp(260px, 78vw, 390px); }
+  .hero-slides { bottom: auto; height: clamp(260px, 78vw, 390px); overflow: hidden; }
   .hero-slide { object-position: center; }
+  .hero-slide--ramen { transform: scale(1.4); transform-origin: 50% 45%; }
   .hero::before { background: linear-gradient(to bottom, transparent 120px, rgba(22, 19, 16, .15) 200px, var(--black) clamp(260px, 78vw, 390px)); }
   .hero-content { width: calc(100% - 40px); padding: 28px 0 88px; text-align: center; }
   .hero-label { margin-bottom: 14px; font-size: .62rem; letter-spacing: .28em; }
@@ -37,7 +38,7 @@
   .hero-brand { white-space: nowrap; }
   .hero-small { margin-bottom: 10px; font-size: .8rem; }
   .hero-description { margin-top: 18px; font-size: .85rem; letter-spacing: .04em; }
-  .hero-buttons { max-width: 350px; gap: 10px; margin: 25px auto 0; }
+  .hero-buttons { display: none; }
   .hero-slideshow-toggle { left: 50%; bottom: 22px; transform: translateX(-50%); white-space: nowrap; }
   .scroll-indicator { display: none; }
 

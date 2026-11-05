@@ -137,6 +137,14 @@ transform: scale(1.045);
 }
 
 /* 店舗情報一覧 */
+.shop-photo.shop-photo--entrance {
+height: auto;
+aspect-ratio: 1;
+}
+.shop-photo--entrance img {
+object-position: center;
+}
+
 .shop-details {
 min-width: 0;
 }
