@@ -13,11 +13,12 @@
   background: linear-gradient(120deg, rgba(57, 20, 29, .9), rgba(34, 15, 22, .8) 48%, rgba(12, 12, 13, .76)),
     url("../images/shoyu-ramen-burgundy.jpg") center 54% / cover no-repeat;
 }
-.menu-header .page-header-content { padding: 70px 24px; animation: none; }
+.menu-header .page-header-content { display: flex; flex-direction: column; align-items: center; max-width: 100%; padding: 70px 24px; animation: none; }
 .menu-header .page-header-en { color: var(--menu-gold); font-size: .65rem; letter-spacing: .32em; }
 .menu-header h1 {
   writing-mode: vertical-rl;
-  margin: 32px auto;
+  width: max-content;
+  margin: 32px 0;
   font-size: clamp(2.5rem, 5vw, 4rem);
   letter-spacing: .24em;
   line-height: 1.5;
@@ -39,7 +40,8 @@
   border-block: 1px solid #c9bdab;
 }
 .category-navigation a {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
@@ -50,6 +52,8 @@
 }
 .category-navigation a + a { border-left: 1px solid #c9bdab; }
 .category-navigation a span { color: #786448; font-family: Georgia, serif; font-size: .75rem; }
+.category-navigation a span:first-child { justify-self: start; }
+.category-navigation a span:last-child { justify-self: end; }
 .category-navigation a:hover { background-color: #e5dccb; }
 .category-navigation a:focus-visible { outline: 2px solid var(--red); outline-offset: -4px; }
 .menu-section { background: var(--menu-paper); scroll-margin-top: var(--header-height); }
@@ -62,10 +66,10 @@
 .menu-category-image { position: relative; box-shadow: 14px 14px 0 #e2d8c5; }
 .menu-category-image img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
 .menu-items { display: grid; }
-.menu-item { min-width: 0; }
+.menu-item { min-width: 0; text-align: center; }
 .menu-items .menu-item { padding: 26px 0; border-bottom: 1px solid #c9bdab; }
 .menu-items .menu-item:first-child { border-top: 1px solid #c9bdab; }
-.menu-item-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.menu-item-heading { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
 .menu-item-heading h3 { font-family: var(--menu-serif); font-size: clamp(1.2rem, 2vw, 1.55rem); letter-spacing: .06em; font-weight: 500; }
 .menu-price { flex-shrink: 0; font-family: Georgia, "Yu Mincho", serif; font-size: 1.2rem; letter-spacing: .03em; font-variant-numeric: tabular-nums; }
 .menu-item > p { margin-top: 14px; color: #615c51; font-size: .85rem; line-height: 2; }
@@ -86,6 +90,7 @@
 .menu-list-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 85px; max-width: 850px; margin: 0 auto; counter-reset: set-meal; }
 .set-meal-card {
   position: relative;
+  text-align: center;
   padding: clamp(14px, 3vw, 32px) clamp(14px, 3vw, 32px) 42px;
   border-bottom: 1px solid rgba(210, 181, 130, .3);
   background: radial-gradient(ellipse at 50% 12%, rgba(30, 24, 25, .65), transparent 75%);
@@ -108,8 +113,8 @@
 .set-meal-card .menu-item-heading { flex-wrap: wrap; gap: 10px 24px; }
 .set-meal-card .menu-item-heading h3 { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: .12em; }
 .set-meal-card .menu-price { color: var(--menu-gold); font-size: 1.45rem; }
-.set-meal-card > p { color: var(--menu-muted); max-width: 650px; }
-.set-meal-card > p:first-of-type { display: inline-block; padding: 10px 16px; border-left: 2px solid var(--menu-gold); background: rgba(210, 181, 130, .06); color: #ece1ce; font-family: var(--menu-serif); font-size: .9rem; letter-spacing: .04em; margin-top: 24px; }
+.set-meal-card > p { color: var(--menu-muted); max-width: 650px; margin-inline: auto; }
+.set-meal-card > p:first-of-type { display: inline-block; padding: 10px 16px; border-inline: 2px solid var(--menu-gold); background: rgba(210, 181, 130, .06); color: #ece1ce; font-family: var(--menu-serif); font-size: .9rem; letter-spacing: .04em; margin-top: 24px; }
 .menu-note { max-width: 850px; margin: 38px auto 0; text-align: center; color: #615c51; font-size: .75rem; line-height: 1.9; }
 #set-meal .menu-note { color: var(--menu-muted); }
 /* 単品は紙のお品書きのような罫線と価格表 */
@@ -119,7 +124,7 @@
 .side-dish-photo { margin: 0; }
 .side-dish-photo img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
 .side-dish-photo figcaption { padding-top: 12px; color: #615c51; font-family: var(--menu-serif); font-size: .75rem; text-align: right; }
-.side-menu-heading { padding: 28px 0 18px; }
+.side-menu-heading { padding: 28px 0 18px; text-align: center; }
 .side-menu-en { color: #7e6644; font-family: Georgia, serif; font-size: .65rem; letter-spacing: .2em; margin-bottom: 7px; }
 .side-menu-heading h3 { font-family: var(--menu-serif); font-size: 1.5rem; letter-spacing: .12em; font-weight: 500; }
 .side-price-row { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-bottom: 1px solid #d8cdbb; }
@@ -145,7 +150,7 @@
   .menu-description { font-size: .82rem; }
   .menu-description br, .category-description br { display: none; }
   .category-navigation { margin-top: 32px; }
-  .category-navigation a { justify-content: center; flex-wrap: wrap; gap: 8px; padding: 19px 8px; font-size: .9rem; }
+  .category-navigation a { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 19px 8px; font-size: .9rem; }
   .category-navigation a span:first-child { width: 100%; text-align: center; }
   .category-navigation a span:last-child { display: none; }
   .category-description { font-size: .86rem; margin-bottom: 36px; }

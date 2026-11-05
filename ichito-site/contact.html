@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="滋賀県東近江市五個荘にある、らぁ麺いちとへのお問い合わせ。メールフォームやInstagramのDMからご質問をお送りいただけます。ご予約は承っておりません。"
+>
+
+<title>お問い合わせ｜らぁ麺 いちと</title>
+<link
+rel="icon"
+href="images/favicon.ico"
+sizes="any"
+>
+
+<link
+rel="icon"
+href="images/ichito-favicon.png"
+type="image/png"
+>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/contact.css?v=20261105">
+
+<script src="js/main.js" defer></script>
+<script src="js/contact-config.js" defer></script>
+<script src="js/contact.js" defer></script>
+<link rel="stylesheet" href="css/mobile.css?v=20261105">
+</head>
+
+<body>
+
+<!-- ヘッダー -->
+<header class="header">
+    <div class="header-inner">
+
+<a
+    href="index.html"
+    class="logo"
+    aria-label="らぁ麺いちと ホームへ"
+>
+    <img
+        class="logo-image"
+        src="images/ichito-header-logo-white.png"
+        alt="らぁ麺 いちと"
+    >
+</a>
+
+    <nav
+        class="navigation"
+        id="global-navigation"
+        aria-label="メインメニュー"
+    >
+        <a href="index.html">ホーム</a>
+        <a href="menu.html">お品書き</a>
+        <a href="commitment.html">こだわり</a>
+        <a href="shop.html">店舗案内</a>
+        <a href="contact.html" class="current" aria-current="page">お問い合わせ</a>
+    </nav>
+
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="global-navigation"
+        aria-expanded="false"
+    >
+        <span class="menu-toggle-lines"></span>
+    </button>
+
+    </div>
+</header>
+
+<div class="menu-overlay" aria-hidden="true"></div>
+
+<main>
+<section class="page-header contact-header">
+<div class="page-header-content">
+<p class="page-header-en">CONTACT</p>
+<h1>お問い合わせ</h1>
+<p>お店についてのご質問を、お気軽に。</p>
+</div>
+</section>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="inner contact-inner">
+        <div class="section-title">
+            <p class="section-title-en">CONTACT</p>
+            <h2 id="contact-heading">お問い合わせ</h2>
+        </div>
+        <p class="contact-intro">お店についてのご質問はこちらからお送りください。<br>
+        ご予約は承っておりません。返信にはお時間をいただく場合があります。</p>
+        <form id="contact-form" method="post" accept-charset="UTF-8" aria-describedby="contact-status">
+            <input type="hidden" name="_subject" value="【らぁ麺 いちと】サイトからのお問い合わせ">
+            <div class="contact-honeypot" aria-hidden="true">
+                <label for="contact-website">この欄は空欄のままにしてください</label>
+                <input id="contact-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <fieldset id="contact-fields" disabled>
+                <div class="contact-field">
+                    <label for="contact-name">お名前 <span>必須</span></label>
+                    <input id="contact-name" name="name" type="text" autocomplete="name" required maxlength="100">
+                </div>
+                <div class="contact-field">
+                    <label for="contact-email">メールアドレス <span>必須</span></label>
+                    <input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="contact-email-help">
+                    <p id="contact-email-help" class="contact-help">返信先のメールアドレスをご入力ください。</p>
+                </div>
+                <div class="contact-field">
+                    <label for="contact-message">お問い合わせ内容 <span>必須</span></label>
+                    <textarea id="contact-message" name="message" rows="7" required minlength="10" maxlength="5000" aria-describedby="contact-message-help"></textarea>
+                    <p id="contact-message-help" class="contact-help">10〜5,000文字でご入力ください。カード番号などの機密情報は入力しないでください。</p>
+                </div>
+                <div class="contact-privacy">
+                    <p>お名前・メールアドレス・お問い合わせ内容は、ご連絡への対応のために利用します。送信には外部サービスFormspreeを使用し、入力内容が同サービスを経由してお店に届きます。</p>
+                    <p><a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspreeのプライバシーポリシー（外部サイト）</a></p>
+                    <label class="contact-consent"><input type="checkbox" name="consent" value="個人情報の取り扱いに同意" required>上記の個人情報の取り扱いに同意します。</label>
+                </div>
+                <button class="button contact-submit" type="submit">お問い合わせを送信する</button>
+            </fieldset>
+            <p id="contact-status" class="contact-status" role="status" aria-live="polite">メールでのお問い合わせは現在準備中です。InstagramのDMをご利用ください。</p>
+            <noscript><p class="contact-status">フォームの利用にはJavaScriptを有効にしてください。InstagramのDMでもお問い合わせいただけます。</p></noscript>
+        </form>
+        <p class="contact-alternative"><a class="text-link" href="https://www.instagram.com/ramen_ichito/" target="_blank" rel="noopener noreferrer">InstagramのDMでお問い合わせ →</a></p>
+    </div>
+    </section>
+
+</main>
+<!-- フッター -->
+<footer class="footer">
+    <div class="footer-inner">
+
+    <div class="footer-shop">
+
+        <p class="footer-logo">
+        らぁ麺 いちと
+        </p>
+
+        <p>
+        滋賀県東近江市五個荘石塚町226-1
+        ハイツ藤 1F
+        </p>
+
+        <p>
+        営業時間：11:00～15:00（L.O.14:45） / 18:00～21:00（L.O.20:45）
+        </p>
+
+        <p>
+        定休日：水曜夜・木曜日
+        </p>
+
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html">ホーム</a>
+        <a href="menu.html">お品書き</a>
+        <a href="commitment.html">こだわり</a>
+        <a href="shop.html">店舗案内</a>
+        <a href="contact.html">お問い合わせ</a>
+    </div>
+
+    <a
+        class="instagram-link"
+        href="https://www.instagram.com/ramen_ichito/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="らぁ麺いちとのInstagramを見る"
+    >
+        <span class="instagram-icon" aria-hidden="true">
+        <span class="instagram-circle"></span>
+        <span class="instagram-dot"></span>
+        </span>
+
+        <span>Instagram</span>
+    </a>
+
+    </div>
+
+    <p class="copyright">
+    &copy; らぁ麺 いちと All Rights Reserved.
+    </p>
+</footer>
+<button
+    class="back-to-top"
+    type="button"
+    aria-label="ページ上部へ戻る"
+>
+    <span aria-hidden="true">↑</span>
+</button>
+</body>
+</html>

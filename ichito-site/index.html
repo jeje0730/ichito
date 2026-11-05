@@ -26,9 +26,10 @@ href="images/ichito-favicon.png"
 type="image/png"
 >
 <link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/index.css?v=20261102-restored">
+<link rel="stylesheet" href="css/index.css?v=20261105-slideshow">
 
 <script src="js/main.js" defer></script>
+<link rel="stylesheet" href="css/mobile.css?v=20261105">
 </head>
 
 <body>
@@ -58,6 +59,7 @@ type="image/png"
         <a href="menu.html">お品書き</a>
         <a href="commitment.html">こだわり</a>
         <a href="shop.html">店舗案内</a>
+        <a href="contact.html">お問い合わせ</a>
     </nav>
 
     <button
@@ -80,6 +82,15 @@ type="image/png"
     <!-- メインビジュアル -->
     <section class="hero">
 
+    <div class="hero-slides" aria-hidden="true">
+        <img class="hero-slide is-active" src="images/shoyu-ramen-burgundy.jpg" alt="" fetchpriority="high">
+        <img class="hero-slide" src="images/karaage-burgundy.jpg" alt="" decoding="async">
+        <img class="hero-slide" src="images/chashu-don-neat-more-negi.png" alt="" decoding="async">
+        <img class="hero-slide" src="images/shop-interior-no-shelf.png" alt="" decoding="async">
+    </div>
+
+    <button class="hero-slideshow-toggle" type="button" hidden>スライドを一時停止</button>
+
     <div class="hero-content">
 
         <p class="hero-label">
@@ -88,7 +99,7 @@ type="image/png"
 
         <h1>
         <span class="hero-small">滋賀・五個荘</span>
-        らぁ麺 いちと
+        <span class="hero-brand">らぁ麺 いちと</span>
         </h1>
 
         <p class="hero-description">
@@ -193,7 +204,7 @@ type="image/png"
             class="home-menu-card home-menu-card-main"
         >
             <div class="home-menu-image">
-            <img src="images/shoyu-ramen-burgundy.jpg?v=20261102" alt="醤油らぁ麺" width="1536" height="1024" loading="lazy" decoding="async">
+            <img src="images/shoyu-ramen-burgundy.jpg" alt="醤油らぁ麺" width="1536" height="1024" loading="lazy" decoding="async">
             </div>
             <div class="home-menu-content">
             <p class="home-menu-en">RAMEN</p>
@@ -223,7 +234,7 @@ type="image/png"
             class="home-menu-card"
         >
             <div class="home-menu-image">
-            <img src="images/chashu-don-burgundy.jpg?v=20261102" alt="ちゃーしゅー丼" width="1536" height="1024" loading="lazy" decoding="async">
+            <img src="images/chashu-don-neat-more-negi.png" alt="ちゃーしゅー丼" width="1536" height="1024" loading="lazy" decoding="async">
             </div>
             <div class="home-menu-content">
             <p class="home-menu-en">SIDE DISH</p>
@@ -305,6 +316,24 @@ type="image/png"
     </div>
     </section>
 
+    <section class="section review-section" aria-labelledby="review-heading">
+    <div class="inner review-inner">
+        <p class="review-label">YOUR VOICE</p>
+        <h2 id="review-heading">ごちそうさまの、そのあとに。</h2>
+        <p class="review-lead">今日の一杯は、いかがでしたか？</p>
+        <p class="review-description">味のこと、お店で過ごしたひとときのこと。<br>
+        ご来店の感想を、Googleの口コミでお聞かせください。<br>
+        皆さまの率直なお声を、これからの一杯につなげていきます。</p>
+        <div class="review-prompt">
+            <span>何を書こうか迷ったら</span>
+            <p>「食べたメニュー」や「印象に残ったこと」など、<br>ご自身の言葉で、お気軽に。</p>
+        </div>
+        <a class="button review-button" href="https://www.google.com/maps/search/?api=1&query=滋賀県東近江市五個荘石塚町226-1+らぁ麺いちと" target="_blank" rel="noopener noreferrer">Googleマップを開く <span aria-hidden="true">↗</span></a>
+        <p class="review-help">お店の「クチコミ」→「クチコミを書く」から投稿できます。<br>投稿にはGoogleアカウントへのログインが必要です。</p>
+        <p class="review-thanks">お寄せいただく一つひとつの声に、感謝を込めて。</p>
+    </div>
+    </section>
+
     <!-- Instagram -->
     <section class="home-instagram">
     <div class="home-instagram-content">
@@ -353,6 +382,7 @@ type="image/png"
         <a href="menu.html">お品書き</a>
         <a href="commitment.html">こだわり</a>
         <a href="shop.html">店舗案内</a>
+        <a href="contact.html">お問い合わせ</a>
     </div>
 
     <a

@@ -9,6 +9,7 @@
 - **お品書き**（`ichito-site/menu.html`）：らぁ麺・定食・単品料理と価格の紹介。
 - **こだわり**（`ichito-site/commitment.html`）：麺・スープ・一杯へのこだわりや、お店の想いの紹介。
 - **店舗案内**（`ichito-site/shop.html`）：住所・営業時間・定休日、Googleマップ、ご来店時の案内。
+- **お問い合わせ**（`ichito-site/contact.html`）：メールフォーム、個人情報の取り扱い、Instagramへの案内。
 
 ## 見てほしいところ
 
@@ -53,6 +54,22 @@ ichito-site/
 
 `ichito-site/index.html`をブラウザで開いてください。
 ビルドや依存パッケージのインストールは不要です。Googleマップの表示やInstagramの閲覧にはインターネット接続が必要です。
+
+## お問い合わせフォームの有効化
+
+独立した`contact.html`にフォームがあります。FormSubmitは接続できなかったため使用を中止し、FormspreeへのHTTPS POSTに切り替えました。2026-11-05、Formspreeの登録ページはHTTP 200を確認済みです。サービスへの接続確認と、フォームの送受信確認は別です。
+
+1. https://formspree.io/register から、お店のメール（`ichito240808@gmail.com`）で登録し、認証メールで認証します。
+2. 管理画面の「New Form」でフォームを作成し、受信先を確認します。
+3. Integrationに表示される`https://formspree.io/f/フォームID`を`ichito-site/js/contact-config.js`の`endpoint`に設定します。未設定の間は送信できません。メールアドレスだけでは送信できません。パスワードやAPIキーはコードに記載しないでください。
+4. 公開先またはローカルHTTPサーバーからフォームを開き、テスト送信します。画像認証が表示された場合は完了します。
+5. 名前・返信先・本文が受信でき、返信先がお問い合わせした人になっていることを確認します。サービス側の受付表示だけで受信完了とは判断しないでください。
+
+送信後はFormspree側の確認画面へ移動します。フォームには必須項目、文字数制限、同意欄、迷惑投稿対策用の`_gotcha`を設けています。ブラウザの検証は利便性のためのもので、送信先サービスの迷惑投稿対策と併用します。
+
+フォームURL`https://formspree.io/f/mnppwowo`を設定済みです。2026-11-05、テスト送信はHTTP 200と`{"next":"/thanks","ok":true}`を返し、Formspreeでの受付を確認しました。Gmail側の実受信は所有者による確認待ちです。送信は外部サービスの稼働状況に依存します。
+
+公式資料：[FormspreeのHTMLフォーム設定](https://help.formspree.io/articles/building-your-form/building-an-html-form)
 
 ## 関連リンク
 

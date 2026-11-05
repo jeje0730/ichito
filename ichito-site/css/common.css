@@ -529,6 +529,31 @@ transition: transform 1s ease;
 transform: scale(1.04);
 }
 
+/* 来店後の感想を伝えやすくする案内 */
+.review-section {
+background: radial-gradient(ellipse at top, rgba(200, 164, 106, .14), transparent 65%), var(--white);
+text-align: center;
+}
+.review-inner { max-width: 820px; }
+.review-label { margin-bottom: 20px; color: var(--amber); font-family: Georgia, serif; font-size: .72rem; letter-spacing: .3em; }
+.review-section h2 { color: var(--red-dark); font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(1.6rem, 3.6vw, 2.8rem); font-weight: 500; letter-spacing: .07em; text-wrap: balance; }
+.review-lead { margin-top: 24px; font-size: 1.05rem; }
+.review-description { margin-top: 18px; color: var(--gray); line-height: 2.1; }
+.review-prompt { max-width: 550px; margin: 28px auto; padding: 20px; border-block: 1px solid var(--line); }
+.review-prompt > span { color: var(--red-dark); font-size: .8rem; font-weight: 600; }
+.review-prompt p { margin-top: 9px; font-size: .9rem; line-height: 1.9; }
+.review-button { gap: 20px; }
+.review-help { margin-top: 16px; color: #62584e; font-size: .78rem; line-height: 1.9; }
+.review-thanks { margin-top: 28px; color: var(--gray); font-family: "Yu Mincho", serif; font-size: .9rem; }
+@media (max-width: 600px) {
+  .review-section h2 { font-size: clamp(1.35rem, 6vw, 1.8rem); }
+  .review-lead { font-size: .95rem; margin-top: 18px; }
+  .review-description { font-size: .9rem; }
+  .review-description br, .review-prompt br { display: none; }
+  .review-prompt { padding: 18px 10px; margin-block: 22px; }
+  .review-thanks { font-size: .8rem; }
+}
+
 /* ========================================
 フッター
 ======================================== */

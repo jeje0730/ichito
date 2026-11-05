@@ -7,6 +7,45 @@ const navigationLinks =
 const backToTop =
     document.querySelector(".back-to-top");
 
+/* ホームの写真を約3秒ごとに切り替える */
+const heroSlides = document.querySelectorAll(".hero-slide");
+const slideshowToggle = document.querySelector(".hero-slideshow-toggle");
+if (heroSlides.length > 1 && slideshowToggle) {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let currentSlide = 0;
+    let paused = reducedMotion.matches;
+    let slideTimer;
+
+    const updateSlideshow = () => {
+        window.clearInterval(slideTimer);
+        slideshowToggle.textContent = paused
+            ? "スライドを再生"
+            : "スライドを一時停止";
+        if (paused || document.hidden) return;
+
+        slideTimer = window.setInterval(() => {
+            const nextSlide = (currentSlide + 1) % heroSlides.length;
+            const nextImage = heroSlides[nextSlide];
+            if (!nextImage.complete || nextImage.naturalWidth === 0) return;
+            heroSlides[currentSlide].classList.remove("is-active");
+            nextImage.classList.add("is-active");
+            currentSlide = nextSlide;
+        }, 3000);
+    };
+
+    slideshowToggle.hidden = false;
+    slideshowToggle.addEventListener("click", () => {
+        paused = !paused;
+        updateSlideshow();
+    });
+    reducedMotion.addEventListener("change", () => {
+        paused = reducedMotion.matches;
+        updateSlideshow();
+    });
+    document.addEventListener("visibilitychange", updateSlideshow);
+    updateSlideshow();
+}
+
 /* ハンバーガーメニュー */
 if (menuToggle && navigation && menuOverlay) {
     const openMenu = () => {

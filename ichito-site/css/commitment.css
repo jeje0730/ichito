@@ -171,6 +171,7 @@ text-shadow: 0 5px 20px rgba(0, 0, 0, 0.45);
 /* 文章 */
 .commitment-text {
 position: relative;
+text-align: center;
 }
 
 .commitment-label {
@@ -200,7 +201,8 @@ line-height: 1.55;
 .commitment-text h2::after {
 position: absolute;
 bottom: 0;
-left: 0;
+left: 50%;
+transform: translateX(-50%);
 width: 58px;
 height: 2px;
 content: "";
