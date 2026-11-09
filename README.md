@@ -52,6 +52,8 @@ ichito-site/
 
 ## 閲覧方法
 
+Cloudflare Pagesでの公開に対応しています。公開設定・独自ドメイン・公開後の確認は [CLOUDFLARE.md](CLOUDFLARE.md) を参照してください。公開ディレクトリは `ichito-site`、ビルドは不要です。
+
 `ichito-site/index.html`をブラウザで開いてください。
 ビルドや依存パッケージのインストールは不要です。Googleマップの表示やInstagramの閲覧にはインターネット接続が必要です。
 
